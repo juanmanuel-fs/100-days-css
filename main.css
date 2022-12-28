@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #222;
+}
+
+.frame{
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+  box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

@@ -1,0 +1,83 @@
+.frame{
+  background-color: lightcoral ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-big, .circle-middle, .circle-small{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 8px 8px 16px 4px rgba(0, 0, 0, 0.2);
+}
+.circle-big{
+  width: 90px;
+  height: 90px;
+  animation: big 4s ease-in-out infinite;
+}
+.circle-middle{
+  width: 60px;
+  height: 60px;
+  animation: c-middle 4s ease-in-out infinite;
+}
+.circle-small{
+  width: 30px;
+  height: 30px;
+  animation: c-small 4s ease-in-out infinite;
+}
+
+@keyframes big {
+  0%{
+    transform: scale(0);
+  }
+  30%{
+    transform: scale(1);
+  }
+  70%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+
+@keyframes c-middle {
+  0%{
+    transform: scale(0);
+  }
+  20%{
+    transform: scale(0);
+  }
+  40%{
+    transform: scale(1);
+  }
+  60%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(0);
+  }
+}
+@keyframes c-small {
+  0%{
+    transform: scale(0);
+  }
+  30%{
+    transform: scale(0);
+  }
+  45%{
+    transform: scale(1);
+  }
+  55%{
+    transform: scale(1);
+  }
+  70%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
