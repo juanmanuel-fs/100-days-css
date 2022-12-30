@@ -1,0 +1,160 @@
+.frame{
+  background: black; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: contrast(20)
+}
+
+.content {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  filter: blur(15px);
+}
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.circle-1{
+  transform: rotate(60deg);
+}
+.circle-2{
+  transform: rotate(120deg);
+}
+.circle-3{
+  transform: rotate(240deg);
+}
+.circle-4{
+  transform: rotate(300deg);
+}
+.circle:after{
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: '';
+  border-radius: 50%;
+  background-color: white;
+}
+.circle-1:after{
+  transform-origin: 15px 15px;
+  animation: rotate 5s linear infinite ;
+  filter: blur(8px);
+}
+.circle-2:after{
+  transform-origin: 15px 15px;
+  animation: rotate 5s linear infinite 3s;
+  filter: blur(8px);
+}
+.circle-3:after{
+  transform-origin: 15px 15px;
+  animation: rotate 5s linear infinite 2s;
+  filter: blur(8px);
+}
+.circle-4:after{
+  transform-origin: 15px 15px;
+  animation: rotate 5s linear infinite 2s;
+  filter: blur(8px);
+}
+
+.dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.dot-1{
+  transform: rotate(45deg);
+}
+.dot-2{
+  transform: rotate(90deg);
+}
+.dot-3{
+  transform: rotate(135deg);
+}
+.dot-4{
+  transform: rotate(180deg);
+}
+.dot-5{
+  transform: rotate(225deg);
+}
+.dot-6{
+  transform: rotate(270deg);
+}
+.dot-7{
+  transform: rotate(315deg);
+}
+.dot-8{
+  transform: rotate(360deg);
+}
+.dot:after{
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  content: '';
+  border-radius: 50%;
+  background-color: white;
+}
+.dot-1:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite ;
+  filter: blur(8px);
+}
+.dot-2:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite 2s;
+  filter: blur(8px);
+}
+.dot-3:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite ;
+  filter: blur(8px);
+}
+.dot-4:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite 2s;
+  filter: blur(8px);
+}
+.dot-5:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite ;
+  filter: blur(8px);
+}
+.dot-6:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite 2s;
+  filter: blur(8px);
+}
+.dot-7:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite ;
+  filter: blur(8px);
+}
+.dot-8:after{
+  transform-origin: 60px 60px;
+  animation: rotate 5s linear infinite 2s;
+  filter: blur(8px);
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
